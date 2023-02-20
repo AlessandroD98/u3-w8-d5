@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap');
+body {
+  background: linear-gradient(89deg, #33d7f2, #9ce4f0);
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root, .App{
+  height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.locationContainer{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.locationContainer p, h3{
+  margin: 0;
 }
+.locationContainer h3 {
+  font-size: 1.3em;
+  text-align: start;
+}
+.SingleLocationContainer {
+  background: linear-gradient(132deg, rgb(2, 108, 223) 0.00%, rgb(0, 246, 253) 100.00%);
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Ptemp {
+  text-align: end;
+  font-size: 2em;
+}
+.PtempMaxMin{
+  font-size: 0.7em;
+  font-weight: bold;
+}
+button {
+  background-color: none;
+  border: none;
+  background: none;
+}
+.Icon {
+  font-size: 1.3em;
+  color: white;
+}
+.LeftContainer{
+background-color: #32669a;
+}
+.form-control {
+  border-radius: 15px;
+  padding: 0;
+  padding-left: 5px;
+  background-color: #4b99e5;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.RightComponentContainer {
+  background-color: #ffffff38;
+    border-radius: 20px;
+    padding: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.PRFT {
+  font-size: 4em;
+  font-weight: 300;
+}
+.DRCOP p, h2{
+margin: 0;
+color: white;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.DRCOP h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.IconRightPart{
+  margin-right: 5px;
+}
+.SaveLocationButton{
+  color: white;
+  background-color: #4b99e5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+h6 {
+  font-size: 0.9em;
+  color: lightgray;
+}
+.P{
+  text-align: start;
+}
+.imgtime{
+  height: 20px;
+  width: 20px;
+}
+.ForsecastNextDay{
+  border-top: 1px solid #ffffff73;
+}
+.ForsecastNextDay p, img{
+  margin: 4px 0px;
+}
+.TempPM {
+  font-size: 0.8em;
+}
+h4 {
+  text-align: start;
 }
